@@ -1,0 +1,30 @@
+{
+  "name": "BackEnd-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "node": "^14.11.0",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cl-sol/BackEnd-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cl-sol/BackEnd-1/issues"
+  },
+  "homepage": "https://github.com/cl-sol/BackEnd-1#readme"
+}
