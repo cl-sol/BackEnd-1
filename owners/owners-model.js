@@ -9,21 +9,32 @@ module.exports = {
 }
 
 function findById(id) {
-    return db("")
+    return db("users")
+        .where({ id })
+        .first();
 };
 
 function getItems(owner_id) {
-    asdf
+    return db("items")
+        .where({ owner_id });
 };
 
 function add(item) {
-    adf
+    return db("items")
+        .insert(item)
+        .then(id => {
+            return findById(id)
+        });
 };
 
-function update(id, update) {
-    dsafd
+function update(id, updates) {
+    return db("items")
+        .where({ id })
+        .update(updates);
 };
 
 function remove(id) {
-    sdaf
+    return db("items")
+        .where("id", id)
+        .del();
 };
