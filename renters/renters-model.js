@@ -13,7 +13,6 @@ function findById(id) {
         .first();
 };
 
-//????? unsure 
 function getItem(renter_id) {
     return db("renter_item")
         .join("users as u", "u.id", "renter_item.renter_id")
