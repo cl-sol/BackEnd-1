@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 const ownerRouter = require("../owners/owners-router");
+const renterRouter = require("../renters/renters-router");
+const itemsRouter = require("../items/items-router");
 
 const server = express();
 
@@ -18,5 +20,7 @@ server.get("/", (req, res) => {
 });
 
 server.use("/api/owners", ownerRouter);
+server.use("/api/renter", renterRouter);
+server.use("/api/items", itemsRouter);
 
 module.exports = server;
